@@ -2,11 +2,24 @@
 
 Pick your weapon and play against the computer - you'll only get a virutal sting if you lose!
 
-Prerequisites: all you need is Python 3 to play
+## Prerequisites
+
+All you need is Python 3 to play
 
 ## Usage
 
-Clone the project 
+Clone the project, <code>cd</code> to your directory/download, and run the game.py file in a python 3 shell.
+
+## Rules
+Same as the calssic game
+
+Ppaper covers Rock Scissors cuts Paper Rock smashes Scissors
+
+Choose your weapon wisely!
+
+built with Python 3
+
+Enjoy!
 
 ## License
 MIT
