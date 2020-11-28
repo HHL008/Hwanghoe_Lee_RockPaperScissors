@@ -1,12 +1,12 @@
 #import packages to extend python (just like we exted sublime, or Atom, or VSCode)
 from random import randint
-from gameComponents import gameVars, chooseWinner#, Comparison
+from gameComponents import gameVars, chooseWinner, Comparison
 
 
 while gameVars.player is False:
 
 	print("===============*/ RSP GAME */===============")
-	print("Computer Lives: ", gameVars.computer_lives, "/", gameVars.total_lives)
+	print("Computer Lives: ", gameVars.Ai_lives, "/", gameVars.total_lives)
 	print("Player Lives: ", gameVars.player_lives, "/", gameVars.total_lives)
 	print("========================================")
 
@@ -37,12 +37,9 @@ while gameVars.player is False:
 	print("________________")
 
 	# MOVE THIS CHUNK OF CODE TO A PACKAGE - START HERE
-
+	
 	if (computer == gameVars.player):
 		print("tie! no one loses a life\n")
-		# print("________________")
-		# print("Player has", player_lives, "lives left")
-		# print("AI has", computer_lives, "lives left")
 
 	#alwats check for negative conditions first (the losing case)	
 	elif (computer == "rock"):
@@ -52,7 +49,7 @@ while gameVars.player is False:
 
 		else:
 			print("you win! computer loses a life\n")
-			gameVars.computer_lives -= 1
+			gameVars.Ai_lives -= 1
 
 	elif (computer == "paper"):
 		if (gameVars.player == "rock"):
@@ -61,7 +58,7 @@ while gameVars.player is False:
 
 		else:
 			print("you win! computer loses a life\n")
-			gameVars.computer_lives -= 1
+			gameVars.Ai_lives -= 1
 
 	elif (computer == "scissors"):
 		if (gameVars.player == "paper"):
@@ -70,19 +67,19 @@ while gameVars.player is False:
 
 		else:
 			print("you win! computer loses a life\n")
-			gameVars.computer_lives -= 1
+			gameVars.Ai_lives -= 1
 
 	# STOP HERE - ALL OF THE ABOVE NEEDS TO MOVE
 
 	if gameVars.player_lives == 0:
 		chooseWinner.winorlose("lost")
 
-	if gameVars.computer_lives == 0:
+	if gameVars.Ai_lives == 0:
 		chooseWinner.winorlose("won")
 	
 	print("________________")
 	print("Player has", gameVars.player_lives, "lives left")
-	print("AI has", gameVars.computer_lives, "lives left\n")
+	print("AI has", gameVars.Ai_lives, "lives left\n")
 
 	# make the loop keep running by setting player vack to False
 	# unset, so that our loop condition above will evaluate to True

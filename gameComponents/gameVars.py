@@ -5,7 +5,7 @@ choices = ["rock", "paper", "scissors"]
 
 # set the lives of the player and computer
 player_lives = 5
-computer_lives = 5
+Ai_lives = 5
 
 total_lives = 5
 

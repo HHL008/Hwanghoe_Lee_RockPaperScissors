@@ -15,7 +15,7 @@ def winorlose(status):
 		# and set player to False so that our loop will restart
 
 		gameVars.player_lives = 5
-		gameVars.computer_lives = 5
+		gameVars.Ai_lives = 5
 		gameVars.player = False
 
 	# this still throws a bug - dosen't present the right choice
@@ -23,3 +23,7 @@ def winorlose(status):
 		print("Make a valid choice - Y or N")
 		#this will generate a bug that we need to fix later
 		choice = input("Y / N ")
+
+		gameVars.player_lives = 5
+		gameVars.Ai_lives = 5
+		gameVars.player = False
