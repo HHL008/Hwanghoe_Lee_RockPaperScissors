@@ -21,5 +21,14 @@ built with Python 3
 
 Enjoy!
 
+## History
+created game.py file
+created gameVars.py and choose Winner.py
+created Comparison.py
+updated the readme.md file
+
+## Credits
+-Credits-
+
 ## License
 MIT
